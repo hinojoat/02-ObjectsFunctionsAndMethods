@@ -28,7 +28,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 3a.  Define a function immediately below this _TODO_.
+# DONE: 3a.  Define a function immediately below this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -36,14 +36,24 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+import math
 
+
+def PT():
+    print(hypotenuse())
+
+
+def hypotenuse():
+    a = 3
+    b = 4
+    return math.sqrt((a ** 2) + (b ** 2))
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -65,11 +75,25 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# DONe: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+boris = rg.SimpleTurtle('turtle')
+edgar = rg.SimpleTurtle('turtle')
 
+
+def draw():
+    window = rg.TurtleWindow()
+    boris.pen = rg.Pen('green', 5)
+    edgar.pen = rg.Pen('green', 5)
+    movement()
+    window.close_on_mouse_click()
+
+
+def movement():
+    boris.forward(100)
+    edgar.backward(100)
 
 ###############################################################################
 # TODO: 5.
@@ -97,3 +121,5 @@ def main():
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 main()
+PT()
+draw()
