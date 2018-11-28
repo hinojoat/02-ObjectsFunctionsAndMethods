@@ -171,15 +171,71 @@ def try_functions():
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
+alex = rg.SimpleTurtle('turtle')
 def try_methods_and_functions():
-    alex = rg.SimpleTurtle('turtle')
     alex.pen = rg.Pen('blue', 5)
     alex.backward(150)
     alex.speed = 1
     alex.draw_square(100)
     alex.right(30)
     alex.draw_square(100)
-    
+    redsquares()
+    thicksquares()
+    final()
+
+
+def redsquares():
+    alex.pen = rg.Pen('red', 5)
+    alex.speed = 5
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+    alex.draw_square(50)
+    alex.right(15)
+
+
+def thicksquares():
+    alex.speed = 100
+    alex.pen = rg.Pen('red', 35)
+    alex.draw_square(300)
+    alex.right(60)
+    alex.draw_square(300)
+    alex.right(60)
+    alex.draw_square(300)
+    alex.right(60)
+    alex.draw_square(300)
+    alex.right(60)
+    alex.draw_square(300)
+    alex.right(60)
+    alex.draw_square(300)
+    alex.right(60)
+    alex.draw_square(300)
+    alex.right(60)
+    alex.draw_square(300)
+    alex.right(60)
+
+
+def final():
+    alex.pen = rg.Pen('black', 3)
+    alex.backward(200)
+    alex.draw_circle(30)
+    alex.draw_square(50)
+
 
 
     """
